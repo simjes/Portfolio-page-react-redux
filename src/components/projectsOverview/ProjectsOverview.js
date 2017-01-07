@@ -9,7 +9,7 @@ class ProjectsOverview extends Component {
         return (
             <div>
                 <Row>
-                    <Column sm={12} md={6} lg={6}>
+                    <Column sm={12} md={12} lg={12}>
                         <Card>
                             <Table selectable={false}
                                    fixedHeader={true}
@@ -37,7 +37,7 @@ class ProjectsOverview extends Component {
                             </Table>
                         </Card>
                     </Column>
-                    <Column sm={12} md={6} lg={6}>
+                    <Column sm={12} md={12} lg={12}>
                         <Card>
                             <Table selectable={false}
                                    fixedHeader={true}

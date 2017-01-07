@@ -5,6 +5,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 import Header from './components/header/Header';
+import Jumbotron from './components/jumbo/Jumbotron';
 
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
             <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
                 <div>
                     <Header />
+                    <Jumbotron/>
                     {React.cloneElement(this.props.children, this.props)}
                 </div>
             </MuiThemeProvider>
