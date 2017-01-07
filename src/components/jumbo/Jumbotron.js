@@ -6,11 +6,10 @@ import './Jumbotron.css';
 class Jumbotron extends Component {
     render() {
         return (
-            <div >
-                <Parallax bgImage={JumboPicture} strength={400} className="jumbo">
-                    <h1>Simon Jespersen</h1>
-                </Parallax>
-            </div>
+            <Parallax bgImage={JumboPicture} strength={300} className="jumbo">
+                <h1>Simon Jespersen</h1>
+                <h3>Master student @ UiO</h3>
+            </Parallax>
         );
     }
 }

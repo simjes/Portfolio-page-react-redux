@@ -5,6 +5,13 @@ import {Card} from 'material-ui/Card';
 
 
 class ProjectsOverview extends Component {
+
+
+    constructor(props) {
+        super(props);
+        props.getAllProjects();
+    }
+
     render() {
         return (
             <div>

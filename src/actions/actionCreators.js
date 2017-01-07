@@ -1,10 +1,22 @@
 import {push} from 'react-router-redux';
 
 //testing: load programs to find idsr/outbreak data
-export function loadOverviewData() {
+/*export function loadOverviewData() {
     return {
-        type: 'LOAD_OVERVIEW_DATA',
-        overview: "some new data"
+        type: 'LOAD_OVERVIEW_DATA'
+    }
+}*/
+
+export function getAllProjects() {
+    return function(dispatch, getState, api) {
+        dispatch({ type: 'LOAD_OVERVIEW_DATA' });
+        fetch(api)
+            .then(function(res) {
+                dispatch({ type: 'LOAD_OVERVIEW_DATA_SUCCESS', payload: res })
+            })
+            .catch(function(res) {
+                dispatch({ type: 'LOAD_OVERVIEW_DATA_FAIL' });
+            })
     }
 }
 

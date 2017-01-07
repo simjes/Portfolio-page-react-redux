@@ -1,15 +1,9 @@
 function overview(state = [], action) {
     switch (action.type) {
-        case 'LOAD_OVERVIEW_DATA':
+        case 'LOAD_OVERVIEW_DATA_SUCCESS':
             return [
                 ...state,
-                {
-                    "outbreakId": 7,
-                    "PHE": "Ebola",
-                    "status": "ALERT",
-                    "location": "newest district",
-                    "date": "11.03.16"
-                }
+                action.payload.body
             ];
         default:
             return state;

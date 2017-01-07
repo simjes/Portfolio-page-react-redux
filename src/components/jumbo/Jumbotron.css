@@ -4,6 +4,6 @@
     display: flex;
     justify-content:center;
     align-content:center;
-    flex-direction:column; /* column | row */
-    height: 800px;
+    flex-direction:column;
+    height: 50vw;/*fix it, media query?*/
 }
