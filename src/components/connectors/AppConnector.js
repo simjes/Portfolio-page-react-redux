@@ -5,7 +5,7 @@ import App from '../../App';
 
 function mapStateToProps(state) {
     return {
-        overview: state.overview,
+        projects: state.projects,
         //connect disease info to props
     }
 }

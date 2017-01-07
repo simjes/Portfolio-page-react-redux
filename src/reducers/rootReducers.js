@@ -1,8 +1,8 @@
 import {combineReducers} from 'redux';
 import {routerReducer} from 'react-router-redux';
 
-import overview from './overview';
+import projects from './projects';
 
-const rootReducer = combineReducers({overview, routing: routerReducer});
+const rootReducer = combineReducers({projects, routing: routerReducer});
 
 export default rootReducer;
