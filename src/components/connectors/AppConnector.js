@@ -6,7 +6,6 @@ import App from '../../App';
 function mapStateToProps(state) {
     return {
         projects: state.projects,
-        //connect disease info to props
     }
 }
 

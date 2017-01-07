@@ -1,0 +1,10 @@
+.project-image {
+    max-height: 300px;
+    max-width: 300px;
+    border-radius: 4px;
+}
+
+.project-container {
+    color: white;
+    text-align: center;
+}

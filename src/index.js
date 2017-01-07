@@ -14,14 +14,10 @@ const router = (
                 <IndexRoute component={ProjectsOverview}>
 
                 </IndexRoute>
-                {/*<Route path="/view/:outbreakId" component={testCom}>
+                {/*<Route path="/view/:projectId" component={testCom}>
 
                 </Route>
-                <Route path="/view/:diseaseId">
-                 if diseases nearing threshold or other rules:
-                 list of these potential outbreaks?
-                 click to get details
-                 </Route>*/}
+                */}
             </Route>
         </Router>
     </Provider>

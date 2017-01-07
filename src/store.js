@@ -4,7 +4,6 @@ import {browserHistory} from 'react-router';
 import rootReducer from './reducers/rootReducers';
 import thunk from 'redux-thunk';
 
-//get the data from DHIS2 webapi, put in default state? Do in component?
 const api = "https://api.cosmicjs.com/v1/simjes-portfolio/object-type/projectdetails?pretty=true&hide_metafields=true";
 const defaultState = {
     projects: []
