@@ -5,10 +5,10 @@ import CircularProgress from 'material-ui/CircularProgress';
 
 class ProjectsOverview extends Component {
 
-
-    constructor(props) {
-        super(props);
-        props.getAllProjects();
+    componentDidMount() {
+        if (this.props.data.projects.length === 0) {
+            this.props.getAllProjects();
+        }
     }
 
     render() {
