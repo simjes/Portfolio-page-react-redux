@@ -13,13 +13,14 @@ class ProjectsOverview extends Component {
 
     render() {
         return (
-            <div>
-                <Row>
+            <div id="card-columns">
+                <Row debug alignContent="center">
                     {this.props.projects.map( project => {
                         return (
-                            <Column key={project._id} sm={12} md={6} lg={4}>
-                                <Project  {...project}/>
-                            </Column> )
+                            <Column key={project._id} xs={12} sm={6} md={4} lg={3}>
+                                <Project {...project}/>
+                            </Column>
+                        )
                     })}
                 </Row>
             </div>

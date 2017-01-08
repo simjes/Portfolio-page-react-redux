@@ -5,7 +5,7 @@ import './Project.css';
 class Project extends Component {
     render() {
         return (
-            <div className="project-container">
+            <div className="card-box">
                 <img className="project-image" src={this.props.metadata.image} />
                 <p>{this.props.title}</p>
             </div>
