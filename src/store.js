@@ -8,7 +8,8 @@ const api = "https://api.cosmicjs.com/v1/simjes-portfolio/object-type/projectdet
 const defaultState = {
     data: {
         projects: [],
-        isFetching: false
+        isFetching: false,
+        doneLoading: false
     }
 };
 const middlewareRouter = routerMiddleware(browserHistory);

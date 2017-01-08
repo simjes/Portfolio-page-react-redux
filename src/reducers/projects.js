@@ -9,6 +9,7 @@ function projects(state = {}, action) {
             return {
                 ...state,
                 isFetching: false,
+                doneLoading: true,
                 projects: action.payload.objects
             };
         default:
