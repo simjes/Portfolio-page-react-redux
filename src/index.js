@@ -6,6 +6,7 @@ import {Router, Route, IndexRoute} from 'react-router';
 import {Provider} from 'react-redux';
 import store, {history} from './store';
 import ProjectsOverview from './components/projectsOverview/ProjectsOverview';
+import ProjectDetails from './components/projectDetails/ProjectDetails';
 
 const router = (
     <Provider store={store}>
@@ -14,10 +15,9 @@ const router = (
                 <IndexRoute component={ProjectsOverview}>
 
                 </IndexRoute>
-                {/*<Route path="/view/:projectId" component={testCom}>
+                <Route path="/view/:projectId" component={ProjectDetails}>
 
                 </Route>
-                */}
             </Route>
         </Router>
     </Provider>
