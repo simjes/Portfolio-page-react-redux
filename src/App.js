@@ -6,6 +6,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 import Header from './components/header/Header';
 import Jumbotron from './components/jumbo/Jumbotron';
+import Footer from './components/footer/Footer';
 
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
                     <Header />
                     <Jumbotron/>
                     {React.cloneElement(this.props.children, this.props)}
+                    <Footer />
                 </div>
             </MuiThemeProvider>
         );

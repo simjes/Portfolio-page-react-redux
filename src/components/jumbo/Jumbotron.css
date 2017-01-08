@@ -6,4 +6,5 @@
     align-content:center;
     flex-direction:column;
     height: 50vw;/*fix it, media query?*/
+    max-height: 1000px;
 }

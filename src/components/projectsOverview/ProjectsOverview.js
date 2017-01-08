@@ -14,7 +14,7 @@ class ProjectsOverview extends Component {
     render() {
         return (
             <div id="card-columns">
-                <Row debug alignContent="center">
+                <Row>
                     {this.props.projects.map( project => {
                         return (
                             <Column key={project._id} xs={12} sm={6} md={4} lg={3}>
