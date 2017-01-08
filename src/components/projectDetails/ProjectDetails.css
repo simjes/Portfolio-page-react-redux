@@ -4,6 +4,14 @@
     color: white;
 }
 
+.project-details-image {
+    max-width: 50%;
+}
+
+.project-details-description {
+    margin: 30px 20vw;
+}
+
 .project-links {
     margin: 4px;
     text-align: center;

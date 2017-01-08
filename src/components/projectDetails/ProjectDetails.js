@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import './ProjectDetails.css';
 import CircularProgress from 'material-ui/CircularProgress';
 import Chip from 'material-ui/Chip';
 import './ProjectDetails.css';
@@ -58,6 +57,8 @@ class ProjectDetails extends Component {
                                 </div>
                             )
                         })}
+                        <p className="project-details-description">{project.metadata.description}</p>
+                        <img className="project-details-image" src={project.metadata.image} />
                     </div>
                     ) : null}
 

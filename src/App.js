@@ -15,7 +15,6 @@ class App extends Component {
             <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
                 <div>
                     <Header />
-                    <Jumbotron/>
                     {React.cloneElement(this.props.children, this.props)}
                     <Footer />
                 </div>
