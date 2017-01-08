@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
-import AppBar from 'material-ui/AppBar';
 import {Link} from 'react-router';
+import './Header.css';
 
 class Header extends Component {
     render() {
         return (
-            <AppBar showMenuIconButton={false}>
-                <Link to="/">
-                    <h1>Portfolio page</h1>
+            <div className="header">
+                <Link to="/" id="header-link">
+                    <h1 className="testing">SIMJES PORTFOLIO</h1>
                 </Link>
-            </AppBar>
+            </div>
         );
     }
 }

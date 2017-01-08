@@ -1,0 +1,10 @@
+#header-link {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header {
+    background-color: #14499E;
+    text-align: center;
+}
