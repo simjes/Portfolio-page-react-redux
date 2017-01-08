@@ -3,6 +3,6 @@ import {routerReducer} from 'react-router-redux';
 
 import projects from './projects';
 
-const rootReducer = combineReducers({projects, routing: routerReducer});
+const rootReducer = combineReducers({data: projects, routing: routerReducer});
 
 export default rootReducer;

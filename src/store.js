@@ -6,7 +6,10 @@ import thunk from 'redux-thunk';
 
 const api = "https://api.cosmicjs.com/v1/simjes-portfolio/object-type/projectdetails?pretty=true&hide_metafields=true";
 const defaultState = {
-    projects: []
+    data: {
+        projects: [],
+        isFetching: false
+    }
 };
 const middlewareRouter = routerMiddleware(browserHistory);
 

@@ -5,7 +5,7 @@ import App from '../../App';
 
 function mapStateToProps(state) {
     return {
-        projects: state.projects,
+        data: state.data
     }
 }
 
