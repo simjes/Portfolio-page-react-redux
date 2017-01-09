@@ -1,17 +1,22 @@
 import React, {Component} from 'react';
-import { Parallax } from 'react-parallax';
-import JumboPicture from './parallaxpicture.png';
+import { Parallax, Background } from 'react-parallax';
+import JumboPicture from './newpara.png';
 import './Jumbotron.css';
 
 class Jumbotron extends Component {
     render() {
         return (
-            <Parallax bgImage={JumboPicture} strength={300} className="jumbo">
-                <div className="jumbo-text">
-                    <h1>Simon Jespersen</h1>
-                    <h3>Master student @ UiO</h3>
-                </div>
-            </Parallax>
+            <div>
+                <Parallax strength={300} className="jumbo">
+                    <Background className="jumbo-bg">
+                        <img src={JumboPicture} className="jumbo-img"/>
+                    </Background>
+                    <div className="jumbo-text">
+                        <h1>Simon Jespersen</h1>
+                        <h3 className="jumbo-sub-text">Master student @ UiO</h3>
+                    </div>
+                </Parallax>
+            </div>
         );
     }
 }

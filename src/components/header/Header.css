@@ -8,3 +8,9 @@
     background-color: #14499E;
     text-align: center;
 }
+
+@media screen and (max-width: 500px) {
+    .header {
+        font-size: 10px;
+    }
+}
