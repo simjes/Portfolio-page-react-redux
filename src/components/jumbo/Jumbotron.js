@@ -9,7 +9,7 @@ class Jumbotron extends Component {
             <div>
                 <Parallax strength={300} className="jumbo">
                     <Background className="jumbo-bg">
-                        <img src={JumboPicture} className="jumbo-img"/>
+                        <img src={JumboPicture} alt="parallax-img" className="jumbo-img"/>
                     </Background>
                     <div className="jumbo-text">
                         <h1>Simon Jespersen</h1>

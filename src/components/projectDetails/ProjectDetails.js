@@ -10,10 +10,9 @@ class ProjectDetails extends Component {
     constructor(props) {
         super(props);
         this.getChipColor = this.getChipColor.bind(this);
-        //this.clickChipEvent = this.clickChipEvent.bind(this);
     }
 
-    componentDidMount() { //do i need this? probably
+    componentDidMount() {
         if (this.props.data.projects.length === 0) {
             this.props.getAllProjects();
         }
@@ -35,6 +34,8 @@ class ProjectDetails extends Component {
                 return green900;
             case "Launchpad":
                 return brown900;
+            default:
+                return redA700;
         }
     }
 
@@ -58,7 +59,7 @@ class ProjectDetails extends Component {
                             )
                         })}
                         <p className="project-details-description">{project.metadata.description}</p>
-                        <img className="project-details-image" src={project.metadata.image} />
+                        <img className="project-details-image" src={project.metadata.image} alt="project" />
                     </div>
                     ) : null}
 
